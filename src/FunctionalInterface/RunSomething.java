@@ -1,4 +1,4 @@
-package 함수형인터페이스;
+package FunctionalInterface;
 
 /**
  * @FunctionalInterface

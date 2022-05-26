@@ -1,16 +1,8 @@
-package 함수형인터페이스;
+package FunctionalInterface;
 
 import java.util.function.*;
 
-/**
- * 함수형 프로그래밍
- * - 순수 함수
- *   - 사이드 이펙트가 없어야한다. (함수 밖에 있는 값을 변경하지 않는다)
- *   - 상태가 없다. (함수 밖에 있는 값을 사용하지 않는다)
- * - 고차 함수
- *   - 함수가 함수를 매개변수로 받을 수 있고 함수를 리턴할 수 있다
- */
-public class Foo {
+public class FuncInterface {
     public static void main(String[] args) {
 
         // 익명 내부 클래스 방식 - 이전에 사용하였던 방법
@@ -26,6 +18,18 @@ public class Foo {
         RunSomething runSomething2 = () -> System.out.println("hello2");
         runSomething2.doIt();
 
+        /**
+         * 함수형 프로그래밍
+         * - 대입문이 없는 프로그래밍이며, 가독성을 높이고 유지보수를 용이하게 해준다
+         *
+         * - 순수 함수
+         *   - 사이드 이펙트가 없어야한다. (함수 밖에 있는 값을 변경하지 않는다)
+         *   - 상태가 없다. (함수 밖에 있는 값을 사용하지 않는다)
+         * - 고차 함수
+         *   - 함수가 함수를 매개변수로 받을 수 있고 함수를 리턴할 수 있다
+         * - 불변성
+         *   - 함수형 프로그래밍은 외부의 영향을 받지 않아야 하기 때문에 변경 가능한 상태를 불변 상태로 만들어야한다
+         */
 
         /**
          * Function<T, R>
